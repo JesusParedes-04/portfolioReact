@@ -9,7 +9,7 @@ import CSS3 from "../public/CSS3.png";
 import Git from "../public/Git.png";
 import Html5 from "../public/HTML5.png";
 import JavaScript from "../public/JavaScript.png";
-import react from "../public/react.png";
+import react from "../public/React.png";
 import AOS from 'aos';
 
 
