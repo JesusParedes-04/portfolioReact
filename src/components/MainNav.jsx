@@ -1,20 +1,20 @@
 import { useContext, useState } from 'react';
-import { FiMoon, FiSun, FiGlobe, FiMenu, FiX } from 'react-icons/fi';
+import { FiMoon, FiSun,  FiMenu, FiX } from 'react-icons/fi';
 import { ThemeContext } from './ThemeProvider';
 import { Link } from 'react-router-dom';
 
 const MainNav = () => {
   const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
-  const [isTranslated, setIsTranslated] = useState(false);
+  // const [isTranslated, setIsTranslated] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleDarkModeToggle = () => {
     toggleDarkMode();
   };
 
-  const handleTranslationToggle = () => {
-    setIsTranslated(!isTranslated);
-  };
+  // const handleTranslationToggle = () => {
+  //   setIsTranslated(!isTranslated);
+  // };
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);

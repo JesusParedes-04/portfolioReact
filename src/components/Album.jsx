@@ -2,7 +2,7 @@ import image1 from "../public/DSC_0834.jpg";
 import image2 from "../public/09022019-DSC_0541.jpg";
 import image3 from "../public/11072020-DSC_0453.jpg";
 import image5 from "../public/DSC_0227.jpg";
-import image6 from "../public/DSC_0541.jpg";
+import image6 from "../public/DSC_0611-2.jpg";
 import image7 from "../public/DSC_0666-2.jpg";
 import image8 from "../public/DSC_0772.jpg";
 import image9 from "../public/DSC_0786.jpg";
