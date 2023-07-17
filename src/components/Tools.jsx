@@ -1,3 +1,7 @@
+import { ThemeContext } from './ThemeProvider';
+import { useContext } from 'react';
+import  { useEffect } from 'react';
+import 'aos/dist/aos.css';
 import Illustrator from "../public/Adobe Illustrator.png";
 import Photoshop from "../public/Adobe Photoshop.png";
 import Bootstrap from "../public/Bootstrap.png";
@@ -6,11 +10,7 @@ import Git from "../public/Git.png";
 import Html5 from "../public/HTML5.png";
 import JavaScript from "../public/JavaScript.png";
 import react from "../public/react.png";
-import  { useEffect } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useContext } from 'react';
-import { ThemeContext } from './ThemeProvider';
 
 
 const Tools = () => {
