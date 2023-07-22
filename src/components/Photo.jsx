@@ -20,10 +20,28 @@ const Photo = () => {
           <h3 className={`font-semibold text-2xl mb-4" ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}> Descubriendo la armonía en la programación fotográfica</h3>
 
           <div className={`mt-6 ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
-            <p className={`text-sm md:text-base ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
-              La fotografía es uno de mis hobbies, donde convergen mis habilidades en programación, diseño y composición visual. A través de la programación, puedo utilizar herramientas y técnicas avanzadas para capturar y editar imágenes, brindándoles un toque personalizado y profesional. Mi experiencia en diseño me permite crear composiciones equilibradas y estéticamente atractivas, utilizando principios de diseño como la regla de los tercios y el uso del color. Esta combinación de habilidades me permite llevar mis fotografías al siguiente nivel, contando historias visuales impactantes y transmitiendo emociones a través de cada imagen.
-              Al fusionar la programación, el diseño y la composición en mi práctica fotográfica, puedo lograr resultados extraordinarios. La programación me brinda la capacidad de automatizar tareas, optimizar la calidad visual y aplicar efectos especiales a mis imágenes. Al mismo tiempo, mi conocimiento en diseño y composición me permite crear imágenes visualmente cautivadoras, donde cada elemento se coloca estratégicamente para lograr un equilibrio y una armonía visual. Esta fusión de habilidades me impulsa a buscar constantemente nuevas formas de capturar momentos únicos y expresar mi creatividad a través de la fotografía.
-            </p>
+
+
+<p className={`text-sm md:text-base ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
+
+
+La fotografía es uno de mis hobbies, donde combino mis habilidades en programación, diseño y composición visual. De manera similar a la programación, donde cada línea de código se escribe con precisión para lograr un software funcional y estético, en la fotografía, cada imagen se construye meticulosamente para transmitir una historia o una emoción. Cada toma es una oportunidad para expresar mi creatividad y captar los detalles más significativos.
+
+</p>
+
+<p className={`text-sm md:text-base ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
+
+La composición visual se convierte en mi lenguaje de expresión fotográfica, donde elementos como la luz, el color, la perspectiva y la composición se combinan armoniosamente para dar vida a imágenes coherentes y atractivas. Cada sesión fotográfica es una oportunidad para mejorar mis técnicas y capturar momentos especiales.
+</p>
+
+<p className={`text-sm md:text-base ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
+
+La exploración de diferentes técnicas y estilos nutre mi proceso creativo y me desafía a buscar nuevas perspectivas. Al tomar mi cámara, me sumerjo en un mundo de posibilidades donde puedo plasmar mi visión única y capturar la esencia de cada instante. La fotografía me brinda un espacio para disfrutar la fascinación por capturar momentos significativos y apreciar la belleza en lo cotidiano.
+
+
+
+</p>
+
           </div>
         </div>
 
