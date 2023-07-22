@@ -42,7 +42,7 @@ const Proyects = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 300,
+    speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true
@@ -70,7 +70,7 @@ const Proyects = () => {
                 className="w-full h-auto object-cover rounded-md mb-4 lg:w-full lg:mr-4 lg:mb-0"
               />
               <div className="flex flex-col justify-center">
-                <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
+                <h3 className="text-lg font-semibold mb-2 mt-4">{project.title}</h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
 
                 <a
