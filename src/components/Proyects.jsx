@@ -73,7 +73,7 @@ const Proyects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md p-4 flex flex-col lg:flex-row"
+              className="bg-white rounded-lg shadow-sm p-4 flex flex-col lg:flex-row"
             >
               <img
                 src={project.imageUrl}
