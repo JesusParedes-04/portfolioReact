@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import workOne from "../public/minireproductorjs.netlify.app.jpeg";
 import workTwo from "../public/Seguimiento Pacientes.jpeg";
 import WorkThree from "../public/OftalmoCenter.png";
+import Workfour from "../public/cofi.jpeg";
 import Footer from "./Footer";
 import Graphic from "./Graphic";
 import { useContext } from "react";
@@ -13,16 +14,14 @@ const Proyects = () => {
   const { isDarkMode } = useContext(ThemeContext);
 
   const projects = [
+
     {
-      title: "MiniReproductor",
-      description: `MiniRepro" es un proyecto que presenta un simulador interactivo de un minireproductor de música, desarrollado mediante el uso de las tecnologías HTML5, CSS3, Bootstrap, JavaScript, SweetAlert. 
-      Una de las características destacadas es la integración de la tecnología fetch y la manipulación de archivos JSON, lo que permite cargar y gestionar fácilmente listas de reproducción y canciones con gran eficiencia.
-      El acceso a la plataforma principal está protegido por una validación de usuario y contraseña, brindando una capa adicional de seguridad y garantizando la privacidad de los datos personales.
-      Usuario: jesus@hotmail.com
-      Contraseña: 1234`,
-      imageUrl: workOne,
-      websiteUrl: "https://minireproductorjs.netlify.app",
+      title: "CofiBucks",
+      description: "Proyecto e-commerce construido y siguiendo las mejores prácticas con React, asegurando una experiencia de usuario fluida y receptiva en todos los dispositivos. Además, se utilizó React Router para una navegación entre páginas y Context Provider. La funcionalidad del carrito de compras integrado en el sitio permite a los usuarios seleccionar sus productos favoritos y gestionar sus pedidos de manera intuitiva. También se utilizó Bootstrap para asegurar un diseño moderno.",
+      imageUrl: Workfour,
+      websiteUrl: "https://cofibucks.netlify.app/",
     },
+
     {
       title: "Aplicación Monitoreo Pacientes",
       description:
@@ -37,6 +36,19 @@ const Proyects = () => {
       imageUrl: WorkThree,
       websiteUrl: "https://oftalmocenter.netlify.app",
     },
+
+    {
+      title: "MiniReproductor",
+      description: `MiniRepro" es un proyecto que presenta un simulador interactivo de un minireproductor de música, desarrollado mediante el uso de las tecnologías HTML5, CSS3, Bootstrap, JavaScript, SweetAlert. 
+      Una de las características destacadas es la integración de la tecnología fetch y la manipulación de archivos JSON, lo que permite cargar y gestionar fácilmente listas de reproducción y canciones con gran eficiencia.
+      El acceso a la plataforma principal está protegido por una validación de usuario y contraseña, brindando una capa adicional de seguridad y garantizando la privacidad de los datos personales.
+      Usuario: jesus@hotmail.com
+      Contraseña: 1234`,
+      imageUrl: workOne,
+      websiteUrl: "https://minireproductorjs.netlify.app",
+    },
+
+
   ];
 
   const sliderSettings = {
@@ -52,9 +64,8 @@ const Proyects = () => {
     <div data-aos="zoom-in">
       <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <h2
-          className={`text-3xl font-bold uppercase mb-8  ${
-            isDarkMode ? " text-slate-50" : " text-slate-800"
-          }`}
+          className={`text-3xl font-bold uppercase mb-8  ${isDarkMode ? " text-slate-50" : " text-slate-800"
+            }`}
         >
           Desarrollo Web
         </h2>
@@ -77,14 +88,13 @@ const Proyects = () => {
                   href={project.websiteUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-               className={`text-white py-2 px-4 flex items-center justify-center rounded-md w-full lg:w-1/4 mx-auto ${
-                    isDarkMode ? "bg-slate-800 text-slate-50" : "bg-slate-800 text-slate-50" 
-                  }`}   
+                  className={`text-white py-2 px-4 flex items-center justify-center rounded-md w-full lg:w-1/4 mx-auto ${isDarkMode ? "bg-slate-800 text-slate-50" : "bg-slate-800 text-slate-50"
+                    }`}
                 >
                   <p className="text-center">Visitame</p>
                 </a>
-                </div>
               </div>
+            </div>
           ))}
         </Slider>
       </div>
