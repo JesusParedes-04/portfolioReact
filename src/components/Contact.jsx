@@ -2,8 +2,10 @@ import Footer from './Footer';
 import { useState } from 'react';
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeProvider';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const { isDarkMode } = useContext(ThemeContext);
   const [formData, setFormData] = useState({
     firstName: '',
@@ -31,19 +33,16 @@ const Contact = () => {
 
   return (
 
-    <div data-aos="flip-left">
-
-    <div className="flex flex-col min-h-screen">
-
+    <div data-aos="flip-left" className="flex flex-col items-center justify-center min-h-screen">
       <div className="flex-grow">
         <h1 className={`text-3xl md:text-6xl text-center mt-8 md:mt-14 mb-5 md:mb-12 font-montserrat uppercase font-bold whitespace-pre-line ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
-          Trabajemos<br /> Juntos
+          {t('form-title')}<br /> {t('form-br')}
         </h1>
 
 
-        <form onSubmit={handleSubmit} className={`max-w-md mx-auto p-4 rounded-md mb-3 ${isDarkMode ? "bg-slate-100" : " bg-slate-800"}`}>
+        <form onSubmit={handleSubmit} className={`max-w-md mx-auto p-4 rounded-md mb-12 ${isDarkMode ? "bg-slate-100" : " bg-slate-800"}`}>
           <div className="mb-4">
-            <label htmlFor="firstName" className={`block mb-1 font-semibold ${isDarkMode ? " text-gray-800" : "text-slate-100"}`}>Nombre</label>
+            <label htmlFor="firstName" className={`block mb-1 font-semibold ${isDarkMode ? " text-gray-800" : "text-slate-100"}`}>{t('name')}</label>
             <input
               type="text"
               id="firstName"
@@ -55,7 +54,7 @@ const Contact = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="lastName" className={` block mb-1 font-semibold  ${isDarkMode ? " text-gray-800" : "text-slate-100"}`}>Apellido</label>
+            <label htmlFor="lastName" className={` block mb-1 font-semibold  ${isDarkMode ? " text-gray-800" : "text-slate-100"}`}>{t('surname')}</label>
             <input
               type="text"
               id="lastName"
@@ -67,7 +66,7 @@ const Contact = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className={`block mb-1 font-semibold ${isDarkMode ? " text-gray-800" : "text-slate-100"}`}>Email</label>
+            <label htmlFor="email" className={`block mb-1 font-semibold ${isDarkMode ? " text-gray-800" : "text-slate-100"}`}>{t('email')}</label>
             <input
               type="email"
               id="email"
@@ -79,7 +78,7 @@ const Contact = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="message" className={`block mb-1 font-semibold ${isDarkMode ? " text-gray-800" : "text-slate-100"}`}>Mensaje</label>
+            <label htmlFor="message" className={`block mb-1 font-semibold ${isDarkMode ? " text-gray-800" : "text-slate-100"}`}>{t('message')}</label>
             <textarea
               id="message"
               name="message"
@@ -91,12 +90,29 @@ const Contact = () => {
           </div>
           <div className='text-center'>
             <button type="submit" className={` font-semibold py-2 px-4 rounded ${isDarkMode ? " bg-slate-800 text-slate-100" : " bg-slate-100 text-gray-800"}`} >
-              Enviar correo electrónico
+              {t('send-mail')}
             </button>
           </div>
         </form>
-      </div>
-      </div>
+        </div>
+
+        {/* Sección de iconos de redes sociales con grid */}
+        <div className="grid grid-cols-4 gap-4 mt-8">
+
+          {/* iconos de redes sociales */}
+       
+          <div className="text-center">
+            <a href="#" className="text-blue-500">
+              <i className="FaInstagram"></i>
+            </a>
+          </div>
+          <div className="text-center">
+            <a href="#" className="text-blue-500">
+              <i className="FaLinkedin"></i>
+            </a>
+          </div>
+        </div>
+
       <Footer />
     </div>
   );

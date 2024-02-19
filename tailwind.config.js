@@ -1,9 +1,12 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.jsx"],
   theme: {
+
+
+
     extend: {
       fontFamily: {
-        sofia: ['Sofia Sans Condensed','sans-serif'],
+        sofia: ['Sofia Sans Condensed', 'sans-serif'],
         bitter: ['Bitter', 'serif'],
         lato: ['Lato', 'sans-serif'],
       },
@@ -28,6 +31,6 @@ module.exports = {
     },
   },
   plugins: [
-   ],
+  ],
 };
 

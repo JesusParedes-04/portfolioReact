@@ -1,10 +1,13 @@
 import image9 from "../public/CSC_0814.jpg";
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeProvider';
+import { useTranslation } from 'react-i18next'
+
 
 
 const Photo = () => {
   const { isDarkMode } = useContext(ThemeContext);
+  const { t } = useTranslation();
 
   return (
 
@@ -16,31 +19,30 @@ const Photo = () => {
 
         <div className="col-span-3 md:col-span-1 lg:col-span-2 row-span-2">
 
-          <h2 className={`font-bold uppercase text-4xl mb-4" ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}> La belleza del código visual</h2>
-          <h3 className={`font-semibold text-2xl mb-4" ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}> Descubriendo la armonía en la programación fotográfica</h3>
+          <h2 className={`font-bold uppercase text-4xl mb-4" ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}> {t('photo1')}</h2>
+          <h3 className={`font-semibold text-2xl mb-4" ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}> {t('photo2')} </h3>
 
           <div className={`mt-6 ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
 
 
-<p className={`text-sm md:text-base ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
+            <p className={`text-sm md:text-base ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
+
+              {t('photo3')}
+
+            </p>
+
+            <p className={`text-sm md:text-base ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
+
+              {t('photo4')}
+            </p>
+
+            <p className={`text-sm md:text-base ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
 
 
-La fotografía es uno de mis hobbies, donde combino mis habilidades en programación, diseño y composición visual. De manera similar a la programación, donde cada línea de código se escribe con precisión para lograr un software funcional y estético, en la fotografía, cada imagen se construye meticulosamente para transmitir una historia o una emoción. Cada toma es una oportunidad para expresar mi creatividad y captar los detalles más significativos.
-
-</p>
-
-<p className={`text-sm md:text-base ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
-
-La composición visual se convierte en mi lenguaje de expresión fotográfica, donde elementos como la luz, el color, la perspectiva y la composición se combinan armoniosamente para dar vida a imágenes coherentes y atractivas. Cada sesión fotográfica es una oportunidad para mejorar mis técnicas y capturar momentos especiales.
-</p>
-
-<p className={`text-sm md:text-base ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
-
-La exploración de diferentes técnicas y estilos nutre mi proceso creativo y me desafía a buscar nuevas perspectivas. Al tomar mi cámara, me sumerjo en un mundo de posibilidades donde puedo plasmar mi visión única y capturar la esencia de cada instante. La fotografía me brinda un espacio para disfrutar la fascinación por capturar momentos significativos y apreciar la belleza en lo cotidiano.
+              {t('photo5')}
 
 
-
-</p>
+            </p>
 
           </div>
         </div>

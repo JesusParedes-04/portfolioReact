@@ -8,16 +8,19 @@ import PalmerasImg6 from "../public/Modern Hanging Banner Mockup.png"
 import PalmerasImg7 from "../public/Paper Shopping ðÆag Beautiful Mockup yellow.png"
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeProvider';
+import {  useTranslation } from 'react-i18next'
+
 const Graphic = () => {
 
   const { isDarkMode } = useContext(ThemeContext);
+  const { t } = useTranslation();
 
   return (
 
 <div >
     <div  data-aos="fade-up" className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
 
-    <h1 className={` text-3xl font-bold mb-8 uppercase  ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>Branding y Diseño</h1>
+    <h1 className={` text-3xl font-bold mb-8 uppercase  ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}> {t("brandingT")}</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4">
         <div className="col-span-4 md:col-span-3">
@@ -29,8 +32,7 @@ const Graphic = () => {
             <h2 className={`font-semibold text-3xl mb-6  ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>Las Palmeras</h2>
           <p className={`text-sm md:text-base ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
 
-          En el proyecto llevado a cabo en Lima, Perú, se buscó diseñar un logotipo moderno para una panadería, con el propósito de atraer a un público joven. Inicialmente, la panadería contaba únicamente con un nombre y un color principal, los cuales sirvieron como punto de partida para el trabajo. El enfoque principal consistió en emplear los conceptos de repetición, rotación y pregnancia para posicionar la marca en la mente de los consumidores.
-
+{t('pdescription8')}
           </p>
         </div>
 
@@ -48,7 +50,7 @@ const Graphic = () => {
 
         <div className=" col-span-4 md:col-span-1 order-2 md:order-none">
           <p className={`text-sm md:text-base ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
-          Se realizaron mejoras significativas en el diseño al incorporar dos colores secundarios junto al color principal, lo cual enriqueció la diversidad y la identidad de la marca. Se utilizaron mockups, lo que resultó en una identidad visual reconocible y memorable para la marca. El logotipo final fue el resultado de un análisis que logró capturar la verdadera esencia de la panadería. Gracias a su diseño versátil, el logotipo se adapta fácilmente a diversas plataformas y canales de comunicación de marca, asegurando una presencia consistente y atractiva en todos los puntos de contacto con los clientes.
+  {t('pdescription5')}
           </p>
         </div>
       </div>
@@ -63,12 +65,11 @@ const Graphic = () => {
 
   <div  className=" col-span-4 md:col-span-1">
 
-    <h2 className={`font-semibold text-3xl mb-6  ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>Museo Barrilete</h2>
+    <h2 className={`font-semibold text-3xl mb-6  ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}> {t('tmuseum')}</h2>
     <p className={`text-sm md:text-base ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
 
-    El proyecto del Museo Barrilete consistió en un rediseño del logotipo para este museo ubicado en Córdoba, Argentina. El enfoque principal fue la creación de un diseño que conectara con los niños visitantes del museo y los representara de manera adecuada. Tras identificar una sobrecarga de información en el logotipo original, se trabajó en simplificarlo y eliminar elementos innecesarios.
+    {t('pdescription6')}
 
-El proceso comenzó con el estudio de diversas formas de barriletes, y se utilizó la estructura de uno de ellos como inspiración para el nuevo diseño. 
 
     </p>
   </div>
@@ -88,9 +89,7 @@ El proceso comenzó con el estudio de diversas formas de barriletes, y se utiliz
   <div className=" col-span-4 md:col-span-1 order-2 md:order-none">
     <p className={`text-sm md:text-base ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
 
-    La composición y descomposición de elementos permitió crear distintas piezas gráficas, destacándose especialmente el concepto de rotación. Para transmitir el espíritu alegre y lleno de energía de los niños, se seleccionaron cuidadosamente tonos vivaces y vibrantes en la paleta de colores.
-
-El resultado fue un logotipo cautivador y encantador, que logra capturar la esencia del Museo Barrilete y se conecta de manera significativa con su público objetivo, despertando la curiosidad y la emoción de los visitantes más jóvenes.
+    {t('pdescription7')}
 
     </p>
   </div>

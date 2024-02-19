@@ -1,38 +1,23 @@
-import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeProvider';
+import { useTranslation } from 'react-i18next';
+
+
 const Footer = () => {
   const { isDarkMode } = useContext(ThemeContext);
+  const { t } = useTranslation();
 
   return (
-    <footer className={` p-4 ${isDarkMode ? 'bg-slate-800 text-slate-50' : 'bg-slate-200 text-slate-800'  }`}>
-      <div className="flex justify-center space-x-4">
-        <a
-          href="https://www.instagram.com/jesuparedes_"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-2xl hover:text-slate-600 transition-colors"
-        >
-          <FaInstagram />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/jesuparedes"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-2xl hover:text-slate-600 transition-colors"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://github.com/JesusParedes-04"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-2xl hover:text-slate-600 transition-colors"
-        >
-          <FaGithub />
-        </a>
-      </div>
+
+    <footer className={` container mb-5 mx-auto text-center ${isDarkMode ? 'text-slate-50' : 'text-slate-800'}`}>
+        <p className="text-sm">
+          © {new Date().getFullYear()} {t('rights')}
+        </p>
     </footer>
+
+
+
+      
   );
 };
 

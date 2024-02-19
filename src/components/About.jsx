@@ -3,14 +3,17 @@ import Tools from "./Tools";
 import Footer from "./Footer";
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeProvider';
+import {  useTranslation } from 'react-i18next'
+
 
 const About = () => {
   const { isDarkMode } = useContext(ThemeContext);
+  const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="mt-20 md:mt-30">
 
-      <div data-aos="zoom-in" className="flex flex-col items-center justify-center min-heigh-full my-20 py-10">
+      <div data-aos="zoom-in" className="flex flex-col items-center justify-center min-heigh-full">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center">
             <div>
@@ -22,20 +25,19 @@ const About = () => {
             </div>
             <div className="w-full md:w-1/2 pl-8">
               <div>
-                <h1 className="text-3xl font-bold md:text-9xl uppercase mt-8 md:mt-10 text-red-700">Hola!</h1>
-                <h2 className={`text-3xl md:text-6xl  ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>Soy Jesús </h2>
+                <h1 className="text-3xl font-bold md:text-9xl uppercase mt-8 md:mt-10 text-red-700"> {t('about1')} </h1>
+                <h2 className={`text-3xl md:text-6xl  ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>  {t('about2')}  </h2>
                 <p className={`mt-4  ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
-                  Soy un desarrollador frontend y content creator con interés por la tecnología y las herramientas digitales. Disfruto el trabajo en equipo y me adapto a las necesidades de cada cliente. Mi objetivo profesional es crecer y destacar como desarrollador y creador de experiencias digitales, aportando valor y satisfacción en cada proyecto que realizo. Puedes conocer un poco sobre mis proyectos aquí.
+                {t('about3')} 
                 </p>
               </div>
             </div>
           </div>
         </div>
+        <Tools />
+        <Footer/>
+
       </div>
-
-      <Tools />
-
-      <Footer />
     </div>
   );
 };
