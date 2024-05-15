@@ -12,8 +12,7 @@ const About = () => {
 
   return (
     <div className="mt-20 md:mt-30">
-
-      <div data-aos="zoom-in" className="flex flex-col items-center justify-center min-heigh-full">
+   <div data-aos="zoom-in" className="flex flex-col items-center justify-center min-heigh-full">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center">
             <div>
@@ -23,6 +22,7 @@ const About = () => {
                 className="object-cover w-full h-auto md:h-80"
               />
             </div>
+
             <div className="w-full md:w-1/2 pl-8">
               <div>
                 <h1 className="text-3xl font-bold md:text-9xl uppercase mt-8 md:mt-10 text-red-700"> {t('about1')} </h1>
