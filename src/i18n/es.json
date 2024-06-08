@@ -28,12 +28,15 @@
 "tmuseum": "Museo Barrilete",
 "about1" : "Hola!",
 "about2" : "Soy Jesús",
-"about3" : "Soy desarrollador fullstack y content creator con interés por la tecnología y las herramientas digitales. He Diseño y desarrollo sitios web a medida, así como también los optimizo mediante SEO On-Page y SEM. Disfruto el trabajo en equipo y me adapto a las necesidades de cada cliente. Mi objetivo profesional es destacar como desarrollador y creador de experiencias digitales. Puedes conocer un poco sobre mis proyectos aquí.",
+"about3" : "Soy desarrollador fullstack y content creator con interés por la tecnología y las herramientas digitales. Diseño y desarrollo sitios web a medida, así como también los optimizo mediante SEO On-Page y SEM. Disfruto el trabajo en equipo y me adapto a las necesidades de cada cliente. Mi objetivo profesional es destacar como desarrollador y creador de experiencias digitales. Puedes conocer un poco sobre mis proyectos aquí.",
 "about4" : "Herramientas y Tecnologías",
-"photo1": "La belleza del código visual",
-"photo2": "Descubriendo la armonía en la programación fotográfica",
-"photo3": "La fotografía es uno de mis hobbies, donde combino mis habilidades en programación, diseño y composición visual. De manera similar a la programación, donde cada línea de código se escribe con precisión para lograr un software funcional y estético, en la fotografía, cada imagen se construye meticulosamente para transmitir una historia o una emoción. Cada toma es una oportunidad para expresar mi creatividad y captar los detalles más significativos.",
-"photo4": "La composición visual se convierte en mi lenguaje de expresión fotográfica, donde elementos como la luz, el color, la perspectiva y la composición se combinan armoniosamente para dar vida a imágenes coherentes y atractivas. Cada sesión fotográfica es una oportunidad para mejorar mis técnicas y capturar momentos especiales." ,
-"photo5": "La exploración de diferentes técnicas y estilos nutre mi proceso creativo y me desafía a buscar nuevas perspectivas. Al tomar mi cámara, me sumerjo en un mundo de posibilidades donde puedo plasmar mi visión única y capturar la esencia de cada instante. La fotografía me brinda un espacio para disfrutar la fascinación por capturar momentos significativos y apreciar la belleza en lo cotidiano.",
-"Monitoreo1": "Monitoreo Pacientes App"
+"photo1": "Momentos",
+"photo2": "Colección",
+"photo3": "trabajo",
+"newPhoto3Text": "Creativo",
+"Monitoreo1": "Monitoreo Pacientes App",
+"visit-buttom": "Visitame",
+"projectTitle1": "Personal Pay Rediseño",
+"otherProjects" : "Proyectos UI"
+
 } 

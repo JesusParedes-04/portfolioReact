@@ -25,14 +25,15 @@
 "brandingT": "Branding & Design",
 "tmuseum": "Barrilete Museum",
 "about1" : "Hi!",
-"about2" : "I'm Jesus",
+"about2" : "I'm Jesús",
 "about3" : "I am a fullstack developer and content creator with an interest in technology and digital tools. I have custom website design and development, as well as optimize them through On-Page SEO and SEM. I enjoy teamwork and adapt to the needs of each client. My professional goal is to stand out as a developer and creator of digital experiences. You can learn a little about my projects here.",
 "about4" : "Technologies & Tools",
-"photo1":  "The Beauty of Visual Code", 
-"photo2": "Discovering Harmony in Photographic Programming",
-"photo3": "Photography is one of my hobbies, where I combine my skills in programming, design and visual composition. Similar to programming, where every line of code is written precisely to achieve functional and aesthetic software, in photography, every image is meticulously constructed to convey a story or an emotion. Every shot is an opportunity to express my creativity and capture the most meaningful details.",
-"photo4": "Visual composition becomes my language of photographic expression, where elements such as light, color, perspective, and composition combine harmoniously to bring coherent and engaging images to life. Every photo shoot is an opportunity to improve my techniques and capture special moments.",
-"photo5": "The exploration of different techniques and styles nourishes my creative process and challenges me to seek new perspectives. By picking up my camera, I immerse myself in a world of possibilities where I can capture my unique vision and capture the essence of each moment. Photography gives me a space to enjoy the fascination of capturing meaningful moments and appreciating the beauty in the everyday" ,
-"Monitoreo1": "Patient monitoring app"
-
+"photo1":  "Moments", 
+"photo2": "Pictures",
+"newPhoto3Text": "Creative",
+"photo3": "Works",
+"Monitoreo1": "Patient monitoring app",
+"visit-buttom": "Go website",
+"projectTitle1": "Personal Pay Redesign",
+"otherProjects" : "UI Proyects"
 }

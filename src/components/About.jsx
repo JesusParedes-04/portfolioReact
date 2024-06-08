@@ -25,8 +25,8 @@ const About = () => {
 
             <div className="w-full md:w-1/2 pl-8">
               <div>
-                <h1 className="text-3xl font-bold md:text-9xl uppercase mt-8 md:mt-10 text-red-700"> {t('about1')} </h1>
-                <h2 className={`text-3xl md:text-6xl  ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>  {t('about2')}  </h2>
+              <h1 className="text-3xl md:text-7xl lg:text-9xl font-bold uppercase mt-8 md:mt-10 text-red-700">{t('about1')}</h1>
+              <h2 className={`text-3xl md:text-6xl  ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>  {t('about2')}  </h2>
                 <p className={`mt-4  ${isDarkMode ? " text-slate-50" : " text-slate-800"}`}>
                 {t('about3')} 
                 </p>

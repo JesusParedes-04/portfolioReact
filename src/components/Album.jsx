@@ -1,8 +1,7 @@
 import image1 from "../public/DSC_0834.jpg";
-import image2 from "../public/09022019-DSC_0541.jpg";
 import image3 from "../public/11072020-DSC_0453.jpg";
 import image5 from "../public/DSC_0227.jpg";
-import image6 from "../public/DSC_0611-2.jpg";
+import image6 from "../public/CSC_0814.jpg";
 import image7 from "../public/DSC_0666-2.jpg";
 import image8 from "../public/DSC_0772.jpg";
 import image9 from "../public/DSC_0786.jpg";
@@ -33,13 +32,13 @@ const Album = () => {
          }}>
         </li>
         <li className="col-span-4 md:col-span-2 bg-custom-img2 rounded-lg shadow-xl h-44 md:h-96"
-         style={{ backgroundImage: `url(${image2})`,
+         style={{ backgroundImage: `url(${image9})`,
          backgroundSize: "cover" }}>
         </li>
         <li className="col-span-4 md:col-span-1 bg-custom-img3 rounded-lg shadow-xl h-44 md:h-96"
         style={{ backgroundImage: `url(${image6})`,
         backgroundSize: "cover",
-        backgroundPosition: "center" }}>
+        backgroundPosition: "30%, 70%" }}>
 
         </li>
 
