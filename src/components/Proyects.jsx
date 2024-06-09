@@ -8,6 +8,9 @@ import workFour from "../public/3.png";
 import workFive from "../public/personalpay.png";
 import worksix from "../public/personalpay2.png";
 import workseven from "../public/personalpay3.png";
+import gifOne from "../public/gifs/palmeras.gif";
+import gifTwo from "../public/gifs/Barrilete.gif";
+import gifThree from "../public/gifs/Microsoft maps.gif";
 
 import Footer from "./Footer";
 import GifCard from "./GifCard";
@@ -46,17 +49,17 @@ const Proyects = () => {
   const gifs = [
     {
       title: "Palmeras",
-      gifSrc: "src/public/gifs/palmeras.gif",
+      gifSrc: gifOne,
     },
     {
       title: "Barrilete ",
-      gifSrc: "src/public/gifs/Barrilete.gif",
+      gifSrc: gifTwo,
     },
 
 
     {
       title: "Microsoft Maps",
-      gifSrc: "src/public/gifs/Microsoft maps.gif",
+      gifSrc: gifThree,
     }
   ];
 
