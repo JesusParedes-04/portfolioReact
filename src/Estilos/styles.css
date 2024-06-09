@@ -58,6 +58,7 @@
   height: 85vh;
 }
 
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .tablet-img {
     max-width: 150px; /* Tamaño personalizado para tablet */
@@ -67,7 +68,7 @@
 @media (max-width: 640px) {
   .mobile-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2fr 1fr);
     gap: 1rem;
   }
   .mobile-img {

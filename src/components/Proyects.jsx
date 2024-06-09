@@ -118,7 +118,7 @@ const Proyects = () => {
           {t('otherProjects')}
         </h2>
 
-        <div className="flex flex-col md:flex-row justify-between items-center bg-gray-100 p-6 rounded-lg shadow-md">
+        <div className="flex flex-col md:flex-row justify-between items-center bg-gray-100 p-6 rounded-lg shadow-md mb-10">
           <div className="text-left mb-4 md:mb-0">
             <h3 className="text-lg font-semibold mb-2 uppercase">{t('projectTitle1')}</h3>
           </div>

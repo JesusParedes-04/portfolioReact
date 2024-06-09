@@ -35,7 +35,7 @@ const Photo = () => {
           {t('photo2')}
         </h2>
         <h1
-          className="font-bold uppercase  gradient-text text-right absolute"
+          className="font-bold uppercase opacity-90 gradient-text text-right absolute"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
