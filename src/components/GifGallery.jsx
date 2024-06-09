@@ -19,4 +19,4 @@ const GifGallery = () => {
   );
 };
 
-export default Graphic;
+export default GifGallery;
