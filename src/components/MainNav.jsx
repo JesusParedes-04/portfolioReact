@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 
 import { useContext, useState } from 'react';
 import { FiMoon, FiSun,  FiMenu, FiX, FiGlobe } from 'react-icons/fi';
@@ -9,7 +7,6 @@ import {  useTranslation } from 'react-i18next'
 
 const MainNav = () => {
   const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
-  // const [isTranslated, setIsTranslated] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t, i18n } = useTranslation();
 
@@ -17,15 +14,6 @@ const MainNav = () => {
     toggleDarkMode();
   };
 
-  // const handleTranslationToggle = () => {
-  //   setIsTranslated(!isTranslated);
-  // };
-
-  // const handleLanguageToggle = () => {
-
-  //   const newLanguage = i18n.language === 'en' ? 'es' : 'en';
-  //   i18n.changeLanguage(newLanguage);
-  // };
 
   const handleLanguageToggle = () => {
     console.log('Current Language:', i18n.language);
@@ -41,7 +29,6 @@ const MainNav = () => {
   return (
     <nav className={`flex items-center justify-between p-4 ${isDarkMode ? 'bg-slate-800 text-slate-50' : 'bg-slate-200 text-slate-800'}`}>
       <div className="hidden md:flex items-center flex-grow">
-        {/* <h1 className="text-lg font-bold">Logo</h1>   AGREGAR LOGO */}
         <div className="flex flex-grow justify-center">
           <Link to="/" className={`mx-4 hover:font-bold ${isDarkMode ? 'bg-slate-800 text-slate-50' : 'bg-slate-200 text-slate-800'}`}>{t('home')}</Link>
           <Link to="/about" className={`mx-4 hover:font-bold ${isDarkMode ? 'bg-slate-800 text-slate-50' : 'bg-slate-200 text-slate-800'}`}>{t('about')}</Link>
@@ -61,7 +48,6 @@ const MainNav = () => {
         <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
           <div className="z-10 absolute top-0 right-0 p-4 bg-slate-800 w-64 h-screen">
             <div className="flex items-center mb-4">
-              {/* <h1 className="text-lg font-bold">Logo</h1> */}
               <button
                 className="ml-auto text-slate-50 hover:text-gray-300"
                 onClick={handleMenuToggle}
