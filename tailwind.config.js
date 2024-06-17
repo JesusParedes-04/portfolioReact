@@ -2,8 +2,6 @@ module.exports = {
   content: ["./index.html", "./src/**/*.jsx"],
   theme: {
 
-
-
     extend: {
       fontFamily: {
         sofia: ['Sofia Sans Condensed', 'sans-serif'],

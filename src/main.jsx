@@ -28,7 +28,6 @@ export default i18next;
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+//Se desactivó el restricted.mode para que puedan ejecutarse algunas funciones como el darkmode:
+ <App />
 )
