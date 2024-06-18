@@ -5,7 +5,7 @@ import image6 from "../public/CSC_0814.jpg";
 import image7 from "../public/DSC_0666-2.jpg";
 import image8 from "../public/DSC_0772.jpg";
 import image9 from "../public/DSC_0786.jpg";
-import Footer from "./Footer"
+import Footer from "./Footer";
 import Photo from "./Photo";
 
 
