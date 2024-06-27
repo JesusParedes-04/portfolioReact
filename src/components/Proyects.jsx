@@ -86,7 +86,7 @@ const Proyects = () => {
                 href={project.websiteUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`text-white py-2 px-4 flex items-center justify-center rounded-md w-full lg:w-1/4 mx-6 ${isDarkMode ? "bg-slate-800 text-slate-50" : "bg-slate-800 text-slate-50"}`}
+                className={`text-white py-2 px-4 flex items-center justify-center rounded-md w-full lg:w-1/4 mb-6 lg:mx-5  ${isDarkMode ? "bg-slate-800 text-slate-50" : "bg-slate-800 text-slate-50"}`}
               >
                 <p className="text-center"> {t('visit-buttom')}</p>
               </a>
