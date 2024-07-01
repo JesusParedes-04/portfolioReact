@@ -12,6 +12,8 @@ import JavaScript from "../public/JavaScript.png";
 import react from "../public/React.png";
 import node from "../public/node.png";
 import mongo from "../public/Mongo.png";
+import typescript from "../public/typescript.png";
+import figma from "../public/figma.png"
 import AOS from 'aos';
 import { useTranslation } from 'react-i18next'
 
@@ -61,12 +63,20 @@ const Tools = () => {
       <img src={react} alt="Imagen 8" className="w-full h-auto max-w-md sm:max-w-none" />
     </div>
 
-    <div className='flex justify-center md:col-start-2'>
+    <div className='flex justify-center '>
       <img src={node} alt="Imagen 9" className="w-full h-auto max-w-md sm:max-w-none" />
     </div>
 
-    <div className='flex justify-center md:col-start-3'>
+    <div className='flex justify-center '>
       <img src={mongo} alt="Imagen 10" className="w-full h-auto max-w-md sm:max-w-none" />
+    </div>
+
+    <div className='flex justify-center'>
+      <img src={typescript} alt="Imagen 11" className="w-full h-auto max-w-md sm:max-w-none" />
+    </div>
+
+    <div className='flex justify-center'>
+      <img src={figma} alt="Imagen 12" className="w-full h-auto max-w-md sm:max-w-none" />
     </div>
 
   </div>
